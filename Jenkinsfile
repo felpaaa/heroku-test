@@ -1,3 +1,3 @@
 node {
-  sh "echo test"
+  build job: 'GithubTest', parameters: [string(name: 'branchToMerge', value: 'BRANCH_NAME')]
 }
